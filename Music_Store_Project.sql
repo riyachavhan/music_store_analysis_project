@@ -36,14 +36,6 @@ ORDER BY total_sum DESC;
 -- be declared the best customer. Write a query that returns the person who has
 -- spent the most money
 
-SELECT * 
-FROM customer;
-
-
-
-SELECT * 
-FROM invoice;
-
 
 
 SELECT sum(total) as s,c.first_name,c.last_name,c.customer_id
@@ -57,19 +49,6 @@ LIMIT 1;
 
 -- Q6]Write a Query to return the email,first name,last name and the genre of all 
 -- Rock music listeners. Return your list order alphabetically by email starting with A.
-
-
-SELECT * 
-FROM invoice;
-
-SELECT * 
-FROM track;
-
-SELECT * 
-FROM customer;
-
-SELECT * 
-FROM genre;
 
 
 
@@ -88,23 +67,8 @@ ORDER BY email
   
 
 
- 
 -- Q7]Let's invite the artist who have written the most rock music in our dataset.
 -- Write a query that return the Artist name and total track count of the top 10 rock bands.
-
-SELECT * 
-FROM artist;
-
-SELECT * 
-FROM album
-
-
-SELECT * 
-FROM genre;
-
-SELECT * 
-FROM track;
-
 
 SELECT art.name,art.artist_id,COUNT(art.artist_id) as number_of_songs
 FROM artist art
@@ -125,26 +89,9 @@ LIMIT 10
 
 
 
-
-
-
 -- Q8]Return all the track names that have a song length longer than the avg song length.
 -- Return the name and millisecond for each track .Order by the song length with the longest
 -- song listed first.
-
-
-SELECT * 
-FROM artist;
-
-SELECT * 
-FROM album
-
-
-SELECT * 
-FROM genre;
-
-SELECT * 
-FROM track;
 
 
 
